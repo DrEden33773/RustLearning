@@ -106,8 +106,9 @@ fn methods() {
             Self { width, height }
             // param_name = var_name, then could write in this way
             // actually, it should be mentioned, rust allow Struct-Bundle-Pattern
-            // Self { width, height }
-            // ^^^^----------------------> Struct => that's why we call it as Struct-Bundle-Pattern
+            //      Self { width, height }
+            //      ^^^^----------------------> Struct
+            //=> that's why we call it as Struct-Bundle-Pattern
             // Struct-Bundle-Pattern <=> Struct-Bundle-Initialization
         }
         fn area(&self) -> f64 {
