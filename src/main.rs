@@ -1,4 +1,5 @@
 mod control_stream;
+mod enum_example;
 mod guess_number;
 mod hello_world;
 mod junior_struct;
