@@ -22,6 +22,7 @@ fn selector() {
     println!("5 => slice_example");
     println!("6 => junior_struct");
     println!("7 => senior_struct");
+    println!("8 => enum_example");
     println!("Please enter your choice:");
     let mut choice = String::new();
     io::stdin()
@@ -36,6 +37,7 @@ fn selector() {
         5 => slice_example::slice_example(),
         6 => junior_struct::generate_jr_struct(),
         7 => senior_struct::senior_struct(),
+        8 => enum_example::enum_example(),
         _ => {
             println!("Invalid choice")
         }
