@@ -62,6 +62,8 @@ fn enum_bounded_with_struct() {
     let polar = Coordinate::Polar(PolarStruct::new(3.0, 0.0));
     cartesian.show();
     polar.show();
-    cartesian.transform().show();
-    polar.transform().show();
+    let cartesian_to_polar = cartesian.transform();
+    cartesian_to_polar.show();
+    let polar_to_cartesian = polar.transform();
+    polar_to_cartesian.show();
 }
