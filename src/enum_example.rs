@@ -1,6 +1,20 @@
-﻿pub(crate) fn enum_example() {
+﻿use std::io;
+
+pub(crate) fn enum_example() {
     println!();
-    enum_bounded_with_struct();
+    println!("1 => enum_bounded_with_struct");
+    println!("2 => evolution_null");
+    // receive input from user
+    let mut input = String::new();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
+    let input: u32 = input.trim().parse().expect("Please type a number!");
+    match input {
+        1 => enum_bounded_with_struct(),
+        2 => evolution_null(),
+        _ => println!("Invalid input"),
+    }
 }
 
 fn enum_bounded_with_struct() {
@@ -66,4 +80,19 @@ fn enum_bounded_with_struct() {
     cartesian_to_polar.show();
     let polar_to_cartesian = polar.transform();
     polar_to_cartesian.show();
+    // end
+    println!();
+}
+
+fn evolution_null() {
+    println!();
+    println!("Here is an example of `Option<T>`, this is a nullable type");
+    let x: Option<i32> = Some(5);
+    let y: Option<i32> = None;
+    println!("x is {:?}", x);
+    println!("y is {:?}", y);
+    println!("x.unwrap() is {}", x.unwrap());
+    println!("y.unwrap() is {}", y.unwrap());
+    // end
+    println!();
 }
