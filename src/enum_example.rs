@@ -58,7 +58,7 @@ fn enum_bounded_with_struct() {
         }
     }
     // examples
-    let cartesian = Coordinate::Cartesian(CartesianStruct::new(1.0, 0.0));
+    let cartesian = Coordinate::Cartesian(CartesianStruct::new(3.0, 4.0));
     let polar = Coordinate::Polar(PolarStruct::new(3.0, 0.0));
     cartesian.show();
     polar.show();
