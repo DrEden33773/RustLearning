@@ -89,10 +89,13 @@ fn evolution_null() {
     println!("Here is an example of `Option<T>`, this is a nullable type");
     let x: Option<i32> = Some(5);
     let y: Option<i32> = None;
+    println!("Called => let x: Option<i32> = Some(5);");
+    println!("Called => let y: Option<i32> = None;");
     println!("x is {:?}", x);
     println!("y is {:?}", y);
     println!("x.unwrap() is {}", x.unwrap());
-    println!("y.unwrap() is {}", y.unwrap());
+    // println!("y.unwrap() is {}", y.unwrap()); //=> panic
+    println!("y is None, so it could not be unwraped ... ");
     // end
     println!();
 }
