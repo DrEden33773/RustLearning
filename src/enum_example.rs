@@ -4,6 +4,7 @@ pub(crate) fn enum_example() {
     println!();
     println!("1 => enum_bounded_with_struct");
     println!("2 => evolution_null");
+    println!("3 => match_option_t");
     // receive input from user
     let mut input = String::new();
     io::stdin()
@@ -13,6 +14,7 @@ pub(crate) fn enum_example() {
     match input {
         1 => enum_bounded_with_struct(),
         2 => evolution_null(),
+        3 => match_option_t(),
         _ => println!("Invalid input"),
     }
 }
@@ -91,6 +93,31 @@ fn evolution_null() {
     let y: Option<i32> = None;
     println!("Called => let x: Option<i32> = Some(5);");
     println!("Called => let y: Option<i32> = None;");
+    println!("x is {:?}", x);
+    println!("y is {:?}", y);
+    println!("x.unwrap() is {}", x.unwrap());
+    // println!("y.unwrap() is {}", y.unwrap()); //=> panic
+    println!("y is None, so it could not be unwraped ... ");
+    // end
+    println!();
+}
+
+fn match_option_t() {
+    println!();
+    println!("Here is an example of match bundled with `Option<T>`");
+    let _x: Option<i32> = Some(5);
+    let _y: Option<i32> = None;
+    println!("Called => let x: Option<i32> = Some(5);");
+    println!("Called => let y: Option<i32> = None;");
+    //
+    fn plus_n(operated: Option<i32>, n: i32) -> Option<i32> {
+        match operated {
+            Some(operated) => Some(operated + n),
+            None => None,
+        }
+    }
+    let x = plus_n(_x, 1);
+    let y = plus_n(_y, 1);
     println!("x is {:?}", x);
     println!("y is {:?}", y);
     println!("x.unwrap() is {}", x.unwrap());
