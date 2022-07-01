@@ -53,10 +53,10 @@ fn enum_bounded_with_struct() {
         }
     }
     impl Coordinate {
-        fn new_Cartesian(x: f64, y: f64) -> Self {
+        fn new_cartesian(x: f64, y: f64) -> Self {
             Self::Cartesian(CartesianStruct::new(x, y))
         }
-        fn new_Polar(radius: f64, theta: f64) -> Self {
+        fn new_polar(radius: f64, theta: f64) -> Self {
             Self::Polar(PolarStruct::new(radius, theta))
         }
         fn transform(&self) -> Self {
@@ -83,8 +83,8 @@ fn enum_bounded_with_struct() {
     let _cartesian = Coordinate::Cartesian(CartesianStruct::new(3.0, 4.0));
     let _polar = Coordinate::Polar(PolarStruct::new(3.0, 0.0));
     // use new_Cartesian and new_Polar to create a Coordinate
-    let cartesian = Coordinate::new_Cartesian(3.0, 4.0);
-    let polar = Coordinate::new_Polar(3.0, 0.0);
+    let cartesian = Coordinate::new_cartesian(3.0, 4.0);
+    let polar = Coordinate::new_polar(3.0, 0.0);
     cartesian.show();
     polar.show();
     let cartesian_to_polar = cartesian.transform();
