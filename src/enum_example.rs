@@ -20,7 +20,7 @@ pub(crate) fn enum_example() {
 }
 
 fn enum_bounded_with_struct() {
-    // 定义 直角坐标系 和 极坐标系
+    // definations
     #[derive(Debug)]
     struct CartesianStruct {
         x: f64,
@@ -33,9 +33,10 @@ fn enum_bounded_with_struct() {
     }
     #[derive(Debug)]
     enum Coordinate {
-        Cartesian(CartesianStruct),
-        Polar(PolarStruct),
+        Cartesian(CartesianStruct), //=> eg. (X,Y)
+        Polar(PolarStruct),         //=> eg. (R,θ)
     }
+    // implements
     impl CartesianStruct {
         fn new(x: f64, y: f64) -> Self {
             Self { x, y }
