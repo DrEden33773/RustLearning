@@ -20,7 +20,7 @@ pub(crate) fn enum_example() {
 }
 
 fn enum_bounded_with_struct() {
-    // definations
+    // definitions
     #[derive(Debug)]
     struct CartesianStruct {
         x: f64,
