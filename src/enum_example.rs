@@ -107,7 +107,7 @@ fn evolution_null() {
     println!("y is {:?}", y);
     println!("x.unwrap() is {}", x.unwrap());
     // println!("y.unwrap() is {}", y.unwrap()); //=> panic
-    println!("y is None, so it could not be unwraped ... ");
+    println!("y is None, so it could not be unwrapped ... ");
     // end
     println!();
 }

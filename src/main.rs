@@ -1,3 +1,5 @@
+use std::io;
+
 mod control_stream;
 mod enum_example;
 mod guess_number;
@@ -6,8 +8,6 @@ mod junior_struct;
 mod readline_output_with_bytes;
 mod senior_struct;
 mod slice_example;
-
-use std::io;
 
 fn main() {
     selector();
