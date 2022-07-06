@@ -8,6 +8,7 @@ mod junior_struct;
 mod readline_output_with_bytes;
 mod senior_struct;
 mod slice_example;
+mod vector_example;
 
 fn main() {
     selector();
@@ -23,6 +24,7 @@ fn selector() {
     println!("6 => junior_struct");
     println!("7 => senior_struct");
     println!("8 => enum_example");
+    println!("9 => vector_example");
     println!("Please enter your choice:");
     let mut choice = String::new();
     io::stdin()
@@ -38,6 +40,7 @@ fn selector() {
         6 => junior_struct::generate_jr_struct(),
         7 => senior_struct::senior_struct(),
         8 => enum_example::enum_example(),
+        9 => vector_example::vector_example(),
         _ => {
             println!("Invalid choice")
         }
