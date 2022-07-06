@@ -47,24 +47,28 @@ fn store_enum_in_vec() {
         B(isize),
         C(f64),
     }
+    // vec_without_macro
     println!("vec_without_macro >>");
     let mut vec_without_macro: Vec<SelfDefinedEnum> = Vec::new();
     vec_without_macro.push(SelfDefinedEnum::A(String::from("a")));
     vec_without_macro.push(SelfDefinedEnum::B(1));
     vec_without_macro.push(SelfDefinedEnum::C(2.0));
-    for element in &vec_without_macro {
-        println!("{:?} ", element);
-    }
+    // for element in &vec_without_macro {
+    //     println!("{:?} ", element);
+    // }
+    println!("{:?}", vec_without_macro);
     println!();
+    // vec_with_macro
     println!("vec_with_macro >>");
-    let vec_without_macro = vec![
+    let vec_with_macro = vec![
         SelfDefinedEnum::A(String::from("a")),
         SelfDefinedEnum::B(1),
         SelfDefinedEnum::C(2.0),
     ];
-    for element in &vec_without_macro {
-        println!("{:?} ", element);
-    }
+    // for element in &vec_without_macro {
+    //     println!("{:?} ", element);
+    // }
+    println!("{:?}", vec_with_macro);
     println!();
 }
 
