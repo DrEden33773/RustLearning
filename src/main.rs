@@ -43,7 +43,3 @@ fn selector() {
         }
     }
 }
-
-fn test_func() {
-    println!("this is a {}", "test_func");
-}
