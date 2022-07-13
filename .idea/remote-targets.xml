@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="WSL - Arch" type="wsl" uuid="b589effd-dd2c-43d3-b039-d17b480ead1a">
+        <config>
+          <option name="distributionMsId" value="Arch" />
+          <option name="projectRootOnTarget" value="/mnt/d/Jetbrains_Toolbox/apps/IDEA-U/ch-0/222.3345.16/jbr/bin&#10;/RustLearning" />
+        </config>
+        <ContributedStateBase type="RsLanguageRuntime">
+          <config>
+            <option name="cargoPath" value="/home/eden/.cargo/bin/cargo" />
+            <option name="cargoVersion" value="1.64.0-nightly (dbff32b27 2022-06-24)" />
+            <option name="rustcPath" value="/home/eden/.cargo/bin/rustc" />
+            <option name="rustcVersion" value="1.64.0-nightly (46b8c23f3 2022-07-01)" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
