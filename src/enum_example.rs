@@ -125,6 +125,7 @@ fn match_option_t() {
             Some(operated) => Some(operated + n),
             None => None,
         }
+        // this function does not contain a return sentence, but it ended with a expression
     }
     let x = plus_n(_x, 1);
     let y = plus_n(_y, 1);
