@@ -79,7 +79,7 @@ fn compare_operator_and_get_method() {
         Some(x) => println!("{}", x),
         None => println!("None"),
     }
-    let operator_returned = vec[3]; //=> paniced
+    let operator_returned = vec[3]; //=> panic
     println!("{}", operator_returned);
 }
 

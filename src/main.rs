@@ -1,6 +1,7 @@
 use std::io;
 
 mod control_stream;
+mod else_files;
 mod enum_example;
 mod guess_number;
 mod hello_world;
